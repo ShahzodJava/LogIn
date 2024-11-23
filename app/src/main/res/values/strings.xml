@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LogIn</string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="email_address">Email Address</string>
+    <string name="welcome">Hi! Welcome</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="forgotten_your_password">Forgotten your password ?</string>
+    <string name="or_sign_in_with">Or sign in with</string>
+    <string name="apple_icon">apple icon</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="don_t_have_an_account">Don’t have an account ?</string>
+    <string name="create_an_account">Create an Account</string>
+</resources>
