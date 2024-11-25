@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="smallMargin">8dp</dimen>
     <dimen name="mediumMargin">16dp</dimen>
     <dimen name="medium2Margin">24dp</dimen>
+    <dimen name="largeMargin">64dp</dimen>
 </resources>

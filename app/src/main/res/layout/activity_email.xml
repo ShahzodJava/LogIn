@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/smallMargin"
+        android:layout_marginVertical="@dimen/mediumMargin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Arrow"
+            android:src="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium2Margin"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="Sign up"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/whatsEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mediumMargin"
+            android:layout_marginVertical="@dimen/mediumMargin"
+            android:fontFamily="@font/inter_semibold"
+            android:text="What’s your email?"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mediumMargin"
+            android:layout_marginVertical="@dimen/mediumMargin"
+            android:background="#00000000"
+            android:hint="Email Address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whatsEmail" />
+
+        <LinearLayout
+            android:id="@+id/sliderLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mediumMargin"
+            android:layout_marginVertical="@dimen/mediumMargin"
+            app:layout_constraintBottom_toTopOf="@id/nextBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent">
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="8dp"
+
+                android:background="@drawable/rounded_corner"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="8dp"
+
+                android:background="@drawable/rounded_corner2"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="@dimen/mediumMargin"
+            android:layout_marginEnd="@dimen/mediumMargin"
+            android:layout_marginBottom="@dimen/smallMargin"
+            android:backgroundTint="#41C485"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/next"
+            android:textSize="15sp"
+            app:cornerRadius="32dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 of 3"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toTopOf="@id/sliderLL"
+            app:layout_constraintEnd_toEndOf="@id/sliderLL"
+            tools:layout_editor_absoluteX="321dp"
+            tools:layout_editor_absoluteY="276dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+
+</LinearLayout>
